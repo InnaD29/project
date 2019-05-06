@@ -1,0 +1,869 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of style reset */
+
+* {
+    box-sizing: border-box;
+} /* Universal selector for all document */
+
+body {
+	background-color: #fff;
+}
+
+/************HEADER*******************/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  height: 120px;
+  z-index: 100;
+}
+.logotype {
+  position: absolute;
+  width: 300px;
+}
+.logotype img {
+  display: block;
+  margin: 0 auto;
+}
+.search {
+  position: absolute;
+  width: 300px;
+  height: 120px;
+  margin: 0 0 0 350px;
+}
+.search input {
+  position: relative;
+  display: block;
+  margin: 45px auto;
+  height: 30px;
+  width: 250px;
+  border-radius: 50px; 
+  border: none;
+  outline: none;
+}
+input[type="search"] {
+   padding-left: 10px;
+}
+:focus::-webkit-input-placeholder{
+  color: transparent;
+}
+:focus::-moz-placeholder{
+  color: transparent;
+}
+:focus::-ms-placeholder{
+  color: transparent;
+}
+.search span {
+  position: absolute;
+  top: 52px;
+  height: 30px;
+  margin-left: 250px; 
+  color:black;
+  z-index: 1;
+}
+
+/***************HEADER NAVBAR*******************/
+.navBar {
+  position: absolute;
+  right: 0;
+  width: 600px;
+  height: 120px;
+}
+.navBar li {
+  display: inline;
+}
+.navBar ul {
+  width: 600px;
+  margin: 52px auto;
+}
+.navBar li {
+  display: inline;
+  padding: 10px;
+}
+.navBar a {
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.navBar a:hover {
+  color: #767575;
+}
+
+/***************MENU FOR RESPONSIVE***************/
+.toggleMenu {
+  position: absolute;
+  top: 45px;
+  right: 50px;
+}
+.toggleMenu {
+  visibility: hidden;
+}
+#menu a {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#menu li {
+  padding: 8px;
+}
+label {
+  font-family: Arial, sans-serif;
+  padding-top: 5px;
+  text-transform: uppercase;
+  background-color: rgba(0,0,0,0.8);
+  border-bottom: 1px solid gray;
+  color: #fff;
+  cursor: pointer;
+}
+label {
+  position: relative;
+  left: 20px;
+  text-align: center;
+  margin: 0 auto;
+  height: 30px;
+  width: 200px;
+  display: inline-block;
+}
+.fas {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  width:  20px;
+}
+#menu-toggle {
+  display: none;
+}
+#menu {
+  background-color:rgba(0,0,0,.7);
+  width: 200px;
+  overflow: hidden;
+  max-height: 0;
+  padding: 0;
+  text-align: center;
+  margin-left: 20px;
+  -webkit-transition: all 0.3s ease;
+}
+#menu-toggle:checked + #menu {
+  max-height: 250px;
+}
+
+/* *****************BACKGROUND_VIDEO ******************/
+.video-container {
+  margin-top: 120px;
+  overflow: hidden;
+  width: 100%;
+  z-index: -1;
+}
+.bg_video {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+}
+/*******************OVERLAY TEXT OVER VIDEO**********/
+.bg_overlay h1 {
+   position: absolute;
+  top: 200px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1.2em;
+  color: #fff;
+  text-transform: uppercase;
+  z-index: 2;
+}
+/********************DESCRIBE ISLAND**********************/
+.unique_island {
+   width: 1000px;
+   position: absolute;
+   top: 350px;
+   left: 0;
+   right: 0;
+   margin: 0 auto;
+   z-index: 3;
+ }
+ .unique_island figure {
+  float: left;
+  width: 500px;
+}
+.unique_island img {
+  display: block;
+  margin: 0 auto;
+}
+.unique_island h2 {
+  font-family: Arial, sans-serif;
+  display: block;
+  margin: 0 auto;
+  line-height: 1.4em;
+  font-size: 1.6em;
+  text-transform: capitalize;
+  text-align: center;
+  width: 350px;
+  padding: 10px;
+  background-color: rgba(255,255,255,.9);
+}
+.unique_island p {
+  text-align: justify;
+  width: 350px;
+  font-weight: normal;
+  line-height: 1.1em;
+  margin: 0 auto;
+  background-color: rgba(255,255,255,.9);
+  font-size: 1.2em;
+  padding: 15px;
+ }
+ .unique_island figcaption {
+  border: 1px solid #D4D0D0;
+  width: 350px;
+  margin: 0 auto;
+  border-top: none;
+ }
+/********************GIUDE ISLANDS *****************/
+.guide {
+  overflow: hidden;
+  width: 1000px;
+  margin: 0 auto;
+}
+.pic_guide {
+  float: left;
+  width: 500px;
+}
+.pic_guide img {
+  display: block;
+  margin: 50px auto;
+  box-shadow: 0 0 50px rgba(0,0,0,0.2); 
+}
+.describe_guide {
+  float: left;
+  width: 500px;
+  height: 550px;
+}
+.describe_guide h2 {
+  font-family: Arial, sans-serif;
+  font-size: 3em;
+  margin-top: 35%;
+  color:  #000;
+  font-weight: 100;
+}
+.tevel_guide p {
+  font-family: Arial, sans-serif;
+  margin-top: 15px;
+  font-size: 1.5em;
+  font-weight: normal;
+  color: #6A6767;
+  line-height: 1.5em;
+  padding-top: 10px; 
+}
+.btn_guide {
+  padding-top: 40px;
+}
+.btn_guide a {
+  font-family: Arial, sans-serif;
+  padding: 13px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 50px;
+  background-color: #2D80DF;
+}
+.btn_guide a:hover {
+  background-color: #1882FB;
+}
+/* *************************ABOUT US ***************/
+.about {
+  overflow: hidden;
+  width: 1200px;
+  margin: 0 auto;
+}
+.aboutUs {
+  float: left;
+  width: 400px;
+  margin: 0 auto;
+}
+.coach_company {
+  float: left;
+  width: 400px;
+  margin: 0 auto;
+}
+.group_tour {
+  float: right;
+  width: 400px;
+  margin: 0 auto;
+}
+.about h2 {
+  font-family: Arial, sans-serif;
+  color: #000;
+  font-size: 3em;
+  text-align: center;
+   margin: 60px; 
+  text-transform: capitalize;
+}
+.about h3 {
+  width: 350px;
+  margin: 0 auto;
+  padding: 20px 0 20px 0;
+  color: #2F2F2F;
+  font-weight: bold;
+  text-align: center;
+}
+.about p {
+  font-family: Arial, sans-serif;
+  text-align: justify;
+  font-weight: normal;
+  width: 350px;
+  color: #58595A;
+  line-height: 1.9em;
+  margin: 0 auto;
+}
+/*************************NEWS ********************/
+.news {
+  width: 1200px;
+  height: 100%;
+  background-color: #fff;
+  margin: 0 auto;
+  border-top: 1px solid #D4D0D0;
+}
+.news_conteiner {
+  overflow: hidden;
+  margin-top: 30px;
+}
+.news h4 {
+  font-family: Arial, sans-serif;
+  font-size: 2.5em;
+  color:  #494646;
+  font-weight: 400px;
+  margin: 40px;
+}
+.news > p {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  color:  gray;
+  font-size: 1.5em;
+}
+.bali {
+  overflow: hidden;
+  float: left;
+  width: 400px;
+}
+.bali img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px 5px 0 0;
+}
+.bermuda {
+  float: left;
+  width: 400px;
+}
+.bermuda img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px 5px 0 0;
+}
+.maldives {
+  float: left;
+  width: 400px;
+}
+.maldives img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px 5px 0 0;
+} 
+.news_conteiner figcaption {
+  width: 320px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #D4D0D0;
+  border-top: none;
+  box-shadow: 0 0 50px rgba(0,0,0,0.2); 
+}
+.news span {
+  font-family: Arial, sans-serif;
+  color: #615C5C;
+  font-weight: 400;
+  line-height: 2em;
+}
+.bali, .bermuda, .maldives, p {
+  font-family: Arial, sans-serif;
+  color: #000;
+  font-weight: bold;
+  padding: 5px 0 20px 0;
+  line-height: 1.5em;
+}
+.bali, .bermuda, .maldives, a {
+  text-decoration: none;
+}
+a.news_read:hover {
+  text-decoration: underline;
+}
+/************************FOTTER*************************/
+footer {
+  overflow: hidden;
+  background-color: #000;
+  margin-top: 100px; 
+}
+.footer_container {
+  overflow: hidden;
+  width: 1200px;
+  margin: 80px auto;
+  border-bottom: 1px solid  #615C5C;
+}
+.footer_container h6 {
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  width:  200px;
+  margin: 0 auto;
+  padding: 0 0 20px 0;
+}
+.footer_container ul {
+  width:  200px;
+  height: 216px;
+  display: block;
+  margin: 0 auto;
+}
+h6.social {
+   width: 400px;
+   text-align: center;
+}
+.islands {
+  float: left;
+  width:  300px;
+}
+.company  {
+  float: left;
+  width:  300px;
+}
+.connectUs {
+  float: left;
+  width:  300px;
+}
+.connect {
+  float:left;
+  width: 300px;
+  margin-top: 36px;
+}
+.footer_container li {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 0 10px 0;
+}
+.connectUs li {
+  padding: 20px 0 20px 0;
+}
+.connect li {
+   padding: 20px 0 20px 0;
+}
+.footer_container a {
+  font-family: Arila, sans-serif;
+  color: #fff;
+}
+.footer_container a:hover{
+  color: #767575;
+}
+.fab {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  font-size: 32px;
+  width:  200px;
+}
+.fa-facebook {
+  color: #3b5999;
+}
+.fa-twitter-square {
+  color: #00acee;
+}
+.fa-linkedin {
+  color: #0077B5;
+}
+.fa-blogger {
+  color: #f57d00;
+}
+.fa-youtube-square {
+  color: #cd201f;
+}
+.fa-google-plus-square {
+  color: #d34836;
+}
+/********************COPYRAITING*********************/
+.copyraiting {
+  color: #716E6E;
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+/********************RESPONSIVE max-width: 1024px*/
+@media (max-width: 1024px){
+.navBar {
+  visibility: hidden;
+}
+.toggleMenu {
+  visibility: visible;
+}
+.guide {
+  margin-top: 200px;
+}
+.coach_company,.aboutUs,p {
+  float: none;
+  width: 1000px;
+}
+.group_tour {
+  float: none;
+  width: 780px;
+}
+.about {
+  width: 1024px;
+}
+.about p {
+   width: 700px;
+}
+.news {
+  width: 900px;
+ }
+.news_conteiner figcaption {
+  width: 250px;
+}
+.news p {
+   width: 200px;
+}
+p.subtitle_news {
+  width: 700px;
+}
+.news h4 {
+  width: 700px;
+ }
+.news > p {
+  margin: 20px;
+  font-size: 1em;
+}
+.bali {
+  width: 300px;
+}
+.bali img {
+  width: 250px;
+  height: 150px;
+}
+.bermuda {
+  width: 300px;
+}
+.bermuda img {
+  width: 250px;
+  height: 150px;
+}
+.maldives img {
+  width: 250px;
+  height: 150px;
+}
+.maldives {
+  width: 300px;
+}
+.footer_container {
+   width: 1000px;
+}
+.footer_container h6 {
+  width:  150px;
+}
+.footer_container ul {
+  width:  150px;
+}
+h6.social {
+   width: 400px;
+}
+.islands, .company,.connectUs .connect {
+  width:  200px;
+}
+.fab {
+  width:  200px;
+}
+}
+
+/********************RESPONSIVE max-width: 768px*******/
+@media (max-width: 768px) {
+.search {
+  display: none;
+}
+.navBar {
+  visibility: hidden;
+}
+.bg_overlay h1 {
+   top: 250px;
+}
+.unique_island {
+    display: none;
+  }
+.toggleMenu {
+  visibility: visible;
+}
+.guide {
+  width: 768px;
+  margin-top: 50px;
+}
+.pic_guide {
+  float: left;
+  width: 300px;
+}
+.pic_guide img {
+  width: 200px;
+  height: 300px; 
+}
+.describe_guide {
+  width: 300px;
+}
+.describe_guide h2 {
+  font-size: 1.1em;
+  max-width: 400px;
+}
+.coach_company,.aboutUs,p {
+  float: none;
+  max-width: 480px;
+}
+.group_tour {
+  float: none;
+  max-width: 400px;
+}
+.about {
+  max-width: 400px;
+ }
+.about p {
+   max-width: 480px;
+   font-size: 1em;
+}
+.about h2 {
+   font-size: 2em;
+   margin-top: 5px;
+}
+.about h3 {
+font-size: 1.1em;
+width: 400px;
+}
+.news {
+  width: 700px;
+ }
+.news_conteiner figcaption {
+   width: 550px;
+}
+.news p {
+   width: 500px;
+}
+p.subtitle_news {
+  width: 700px;
+  text-align: center;
+}
+.news h4 {
+  width: 700px;
+}
+.news > p {
+  margin: 20px;
+  font-size: 1em;
+}
+.bali {
+  float: none;
+  width: 700px;
+}
+.bali img {
+  width: 550px;
+  height: 350px;
+}
+.bermuda {
+  float: none;
+  width: 700px;
+}
+.bermuda img {
+ width: 550px;
+  height: 350px;
+}
+.maldives img {
+  width: 550px;
+  height: 350px;
+}
+.maldives {
+  float: none;
+  width: 700px;
+}
+.footer_container {
+   width: 720px;
+}
+.footer_container h6 {
+  width:  150px;
+}
+.footer_container ul {
+  width:  150px;
+}
+h6.social {
+   width: 200px;
+}
+.islands, .company,.connectUs, .connect {
+  width:  180px;
+}
+.fab {
+  width:  160px;
+}
+}
+
+/********************RESPONSIVE (min-width: 320px) and (max-width: 480px)*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .bg_overlay h1 {
+   top: 200px;
+   font-size: 1em;
+}
+.logotype {
+  width: 150px;
+}
+.toggleMenu {
+  max-width: 150px;
+}
+#menu-toggle:checked + #menu {
+  max-height: 150px;
+}
+.guide {
+  max-width: 300px;
+}
+.pic_guide {
+  float: none;
+  max-width: 300px;
+}
+.pic_guide img {
+  width: 200px;
+  height: 300px; 
+}
+.describe_guide {
+  width: 250px;
+}
+.describe_guide h2 {
+  font-size: 1.8em;
+  max-width: 300px;
+}
+.describe_guide p {
+  font-size: 1.1em;
+  max-width: 350px;
+}
+.about {
+  max-width: 350px;
+ }
+.coach_company, .aboutUs  {
+  float: none;
+  max-width: 350px;
+}
+.group_tour {
+  float: none;
+  width: 350px;
+}
+.about p {
+   width: 330px;
+   font-size: 1.1em;
+}
+.about h2 {
+   font-size: 2.5em;
+   margin-top: 5px;
+}
+.about h3 {
+font-size: 1em;
+width: 350px;
+}
+.news {
+  max-width: 350px;
+ }
+.news_conteiner figcaption {
+   width: 350px;
+}
+.news p {
+   width: 300px;
+}
+p.subtitle_news {
+  width: 300px;
+  text-align: center;
+}
+.news h4 {
+  width: 300px;
+}
+.bali, .bermuda, .maldives {
+  width: 350px;
+}
+.bali img, .bermuda img, .maldives img {
+  width: 350px;
+  height: 250px;
+}
+.footer_container {
+   max-width: 300px;
+}
+.footer_container h6 {
+  width:  100px;
+}
+.footer_container ul {
+  width:  100px;
+ }
+h6.social {
+   width: 300px;
+}
+.islands, .company {
+  width:  150px;
+}
+.connectUs, .connect {
+  width: 300px;
+  float: none;
+}
+.fab {
+  width:  130px;
+}
+}
