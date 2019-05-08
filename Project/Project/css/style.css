@@ -102,6 +102,13 @@ input[type="search"] {
 :focus::-ms-placeholder{
   color: transparent;
 }
+input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
 .search span {
   position: absolute;
   top: 52px;
@@ -521,7 +528,7 @@ h6.social {
   margin-bottom: 20px;
 
 }
-/********************RESPONSIVE max-width: 1024px*/
+/********************RESPONSIVE max-width: 1280px*/
 @media  (max-width: 1280px){
 .guide {
   margin-top: 50px;
@@ -533,8 +540,7 @@ h6.social {
   color: #767575;
 }
 }
-
-/********************RESPONSIVE max-width: 768px*******/
+/********************RESPONSIVE max-width: 1200px*******/
 @media  (max-width: 1200px){
 .navBar {
   visibility: hidden;
@@ -556,9 +562,9 @@ h6.social {
   float: none;
 width: 900px;
 }
-.about h3 {
+/*.about h3 {
   width: 100%;
- }
+ }*/
 .about p {
   width: 100%;
 }
@@ -601,6 +607,7 @@ h6.social {
    width:  100px;
 }
 }
+/********************RESPONSIVE max-width: 966px*******/
 @media (max-width: 966px) {
   .unique_island {
    width: 800px;
@@ -619,8 +626,7 @@ h6.social {
 .unique_island p {
    height: 100px;
   width: 300px;
-  
- }
+  }
  .unique_island figcaption {
   overflow: hidden;
    width: 300px;
@@ -654,6 +660,7 @@ h6.social {
    width:  100px;
 }
 }
+/********************RESPONSIVE max-width:800px-768px*******/
 @media (max-width: 800px) {
  .logotype {
   width: 200px;
@@ -665,7 +672,7 @@ h6.social {
   font-size: 1.8em;
  }
  .guide {
-  margin-top: 300px;
+  margin-top: 350px;
   width: 700px;
  }
   .pic_guide {
@@ -685,37 +692,70 @@ h6.social {
 .tevel_guide p {
   font-size: 1em;
 }
-.btn_guide a {
-  font-family: Arial, sans-serif;
-  padding: 10px;
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  border-radius: 50px;
-  background-color: #2D80DF;
+.about {
+/*  width:700px;*/
+  margin-top: -100px; 
 }
-.btn_guide a:hover {
-  background-color: #1882FB;
+.aboutUs, .coach_company, .group_tour  {
+  float: none;
+  width: 700px;
 }
-
+.about h3 {
+  width: 650px;
+ }
+.about p {
+  width: 650px;
+}
+.news {
+  width: 700px;
+ }
+.news_conteiner figcaption {
+  width: 500px;
+  box-shadow: none;
+  box-shadow: 0 0 50px rgba(0,0,0,0.1); 
+}
+.news p {
+   width: 500px;
+}
+p.subtitle_news {
+  width: 700px;
+  text-align: center;
+}
+.news h4 {
+  width: 700px;
+}
+.news > p {
+   font-size: 1em;
+   text-align: left;
+}
+.bali,.bermuda, .maldives  {
+  float: none;
+  width: 700px;
+}
+.bali img, .bermuda img, .maldives img {
+  width: 500px;
+  height: 330px;
+  box-shadow: 0 0 50px rgba(0,0,0,0.1); 
+}
 .footer_container {
-   width: 100%;
+   width: 750px;
 }
 .footer_container h6 {
    width:  150px;
 }
 .footer_container ul {
-  width:  150px;
+  width:  130px;
 }
 h6.social {
    width: 300px;
 }
 .islands, .company, .connectUs, .connect {
-   width: 230px;
+   width: 170px;
 }
 .fab {
    width:  100px;
 }
+
 }
 
 /********************RESPONSIVE (min-width: 320px) and (max-width: 480px)
