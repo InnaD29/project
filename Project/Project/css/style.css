@@ -553,20 +553,17 @@ h6.social {
 }
 .guide {
    width: 100%;
-  margin-top: 150px;
+   margin-top: 150px;
 }
 .about {
   width: 100%;
 }
 .aboutUs, .coach_company, .group_tour  {
   float: none;
-width: 900px;
+  width: 900px;
 }
-/*.about h3 {
-  width: 100%;
- }*/
 .about p {
-  width: 100%;
+  width: 800px;
 }
 .news {
   width: 900px;
@@ -608,7 +605,7 @@ h6.social {
 }
 }
 /********************RESPONSIVE max-width: 966px*******/
-@media (max-width: 966px) {
+@media (max-width: 1000px) {
   .unique_island {
    width: 800px;
   }
@@ -661,7 +658,7 @@ h6.social {
 }
 }
 /********************RESPONSIVE max-width:800px-768px*******/
-@media (max-width: 800px) {
+@media (max-width: 901px) {
  .logotype {
   width: 200px;
  }
@@ -670,6 +667,28 @@ h6.social {
  }
  .bg_overlay h1 {
   font-size: 1.8em;
+ }
+.unique_island {
+   width: 700px;
+  }
+ .unique_island figure {
+  float: left;
+  width: 350px;
+}
+.unique_island img {
+   width: 250px;
+   height: 190px;
+}
+.unique_island h2 {
+  width: 250px;
+}
+.unique_island p {
+   height: 100px;
+  width: 250px;
+  }
+ .unique_island figcaption {
+   width: 250px;
+   height: 230px;
  }
  .guide {
   margin-top: 350px;
@@ -687,7 +706,7 @@ h6.social {
   width: 350px;
  }
 .describe_guide h2 {
-   font-size: 2em;
+   font-size: 1.5em;
 }
 .tevel_guide p {
   font-size: 1em;
@@ -758,14 +777,24 @@ h6.social {
 
 }
 
-/********************RESPONSIVE (min-width: 320px) and (max-width: 480px)
-/*@media (min-width: 320px) and (max-width: 480px) {
+/********************RESPONSIVE (min-width: 320px) and (max-width: 480px)*/
+@media (min-width: 0) and (max-width: 680px) {
   .bg_overlay h1 {
    top: 200px;
    font-size: 1em;
 }
+.unique_island {
+   visibility: hidden;
+  }
+  .search {
+    visibility: hidden;
+  }
 .logotype {
   width: 150px;
+}
+.logotype img {
+   width: 100px;
+   height: 100px;
 }
 .toggleMenu {
   max-width: 150px;
